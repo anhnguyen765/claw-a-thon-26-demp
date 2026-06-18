@@ -2,6 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: 'export',
+  basePath: '/claw-a-thon-26-demp',
+  images: {
+    unoptimized: true,
+  },
+  trailingSlash: true,
 }
 
 module.exports = nextConfig

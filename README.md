@@ -120,7 +120,26 @@ BabyWhy uses five specialized agents:
 
 ## Deployment
 
-### Deploy to Vercel
+### Deploy to GitHub Pages (Recommended)
+
+The app is configured for automatic GitHub Pages deployment via GitHub Actions.
+
+**Setup (One-time):**
+1. Go to: `Settings` → `Pages`
+2. Select `GitHub Actions` as the source
+3. Save
+
+**Deploy:**
+```bash
+git push origin main
+# Workflow automatically builds and deploys!
+```
+
+**View your site:** `https://anhnguyen765.github.io/claw-a-thon-26-demp/`
+
+For detailed instructions, see [DEPLOY.md](./DEPLOY.md)
+
+### Deploy to Vercel (Alternative)
 
 ```bash
 # Push to GitHub (if not already done)
