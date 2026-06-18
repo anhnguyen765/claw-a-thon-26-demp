@@ -4,10 +4,10 @@
   "description": "BabyWhy - AI Decision Clarity Coach for Product Owners",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx",
-    "export": "next build && next export",
+    "export": "next build",
     "deploy": "npm run build && gh-pages -d out"
   },
   "dependencies": {
