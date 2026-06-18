@@ -1114,6 +1114,26 @@
   min-width: 0;
 }
 
+.demo-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  background: #000;
+  animation: scaleIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+.demo-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .repo-link {
   display: flex;
   align-items: center;
@@ -1128,6 +1148,15 @@
   cursor: pointer;
   transition: all 0.3s ease;
   animation: slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+}
+
+.repo-link .repo-name {
+  white-space: normal;
+}
+
+.repo-link > div {
+  flex: 1;
+  min-width: 0;
 }
 
 .repo-link:hover {
@@ -1156,7 +1185,7 @@
 .presentation-controls {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 16px;
   padding: 16px 20px;
   background: rgba(255, 255, 255, 0.02);
